@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>GEO-IMAGINE SOLUTION</title>
+        <link rel="stylesheet" href="assets/styles/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <nav class="search">
+                <div class="logo"><a href='#'><img src="assets/icon/geoimagine.png" alt="geoimagine" title="Geo-Imagine Solution"></a></div>
+                <ol>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Content</a>
+                        <div class="dropdown-content">
+                          <a href="fotoudara.html">Foto Udara</a>
+                          <a href="imageanalisis.html">Image Analysis</a>
+                          <a href="#">LiDar</a>
+                        </div>
+                      </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                    <input type="search" placeholder="Search..">
+                </ol>
+            </nav>
+            <div class="jumboton">
+                <h1>FOTO UDARA</h1>
+                <p>Cover area yang luas, Lebih hemat waktu dan biaya serta akurasi yang tepat.</p>
+            </div>
+        </header>
+        <main>
+            <div id="conten">
+                <article id="Definisi" class="card">
+                    <h2>Pengertian</h2>
+                    <img src="assets/image/fotoudara.JPG" alt="Pengertian" class="kolom-gambar" title="Foto Udara">
+                    <p>Foto Udara adalah hasil pemotretan suatu daerah dari ketinggian tertentu, dalam ruang lingkup atmosfer menggunakan kamera. Misalnya pemotretan menggunakan pesawat terbang, heikopter, balon udara, drone/UAV, dan wahana lainnnya.
+                    Keuntungannya, penggunaan foto udara menghasilkan gambar/citra yang lebih detail (resolusi sekitar 15cm), tidak terkendala awan, karena pengoperasiaannya pada ketinggian di bawah awan. Kelemahannya, foto udara terdiri dari kumpulan scene kecil yang banyak, terlebih lagi untuk pemotretan dengan area yang sangat luas. Pengoperasian foto udara juga sangat tergantung dari cuaca, seperti faktor angin. Misalnya untuk penggunaan UAV, hasil foto udara kurang bagus jika tiupan angin terlalu kencang, karena hasil pemotretan kurang stabil.
+                    Kelemahan yang lain, foto udara harus dibarengi dengan pengambilan GCP (Ground Control Point di Lapangan) untuk melakukan korekasi geometrik (orthorectification), karena kalau tidak, bisa dipastikan keakuratan geometrik akan sangat rendah. Dari segi biaya, foto udara jauh lebih mahal jika dibandingkan dengan citra satelit, karena banyak hal yang diperlukan, seperti biaya operasional pesawat, izin penerbangan (misal untuk pesawat terbang, helikopter), biaya personil ke lapangan (pengambilan titik koordiant GCP ataupun pengoperasian pesawat), dan lain-lain.</p>
+        
+                    <p>Sebagai gambaran pada foto dikenal ada 3 (tiga) jenis yaitu foto tegak, foto miring dan foto miring sekali. Yang dimaksud dengan foto tegak adalah foto yang pada saat pengambilan objeknya sumbu kamera udara sejajar dengan arah gravitasi( tolerensi &lt; 3<sup>o</sup> ), sedangkan yang disebut dengan foto miring sekali apabila pada foto tersebut horison terlihat. Untuk foto miring, batasannya adalah antara kedua jenis foto tersebut.
+                    Secara umum foto yang digunakan untuk peta adalah foto tegak (Wolf, 1974).</p>
+                </article>
+
+                <article id="geografis" class="card">
+                    <h2>Proses Pengumpulan Data</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/id/2/2f/Elektroatmosfer.gif" alt="geografis" class="kolom-gambar" title="Konsep Penginderaan Jauh">
+                    <p>Data dapat dikumpulkan dengan berbagai macam peralatan menurut objek atau fenomena yang sedang diamati. Umumnya, teknik-teknik pengindraan jauh memanfaatkan radiasi elektromagnetik yang dipancarkan atau dipantulkan oleh objek yang diamati dalam frekuensi tertentu seperti inframerah, cahaya tampak, dan gelombang mikro. Hal ini terjadi karena objek yang diamati (tumbuhan, rumah, permukaan air, dan udara) memancarkan atau memantulkan radiasi dalam panjang gelombang dan intensitas yang berbeda-beda.
+                        Metode pengindraan jauh lainnya antara lain melalui gelombang suara, gravitasi, atau medan magnet.</p>
+                    <img src="https://www.pelajaran.co.id/wp-content/uploads/2016/07/pengindraan-jauh.jpg" alt="fixwing" title="Pesawat Tanpa Awak" style= background-color:white; width=30%;>
+                    <p>Kami menggunakan wahana pesawat tanpa awak (UAV) dalam melakukan kegiatan foto udara, dalam hal ini ada 2 jenis yang digunakan, model fixwing untuk cakupan area yang luas
+                        dan model multirotor untuk area yang lebih spesifik dan detail, masing-masing menghasilkan foto udara dengan kualitas yang sama baiknya, jika dikombinasikan dengan GPS maka tingkat ketelitian foto akan semakin baik.</p>
+                </article>
+
+                <article id="wisata" class="card">            
+                    <h2>Pengolahan Data dan Interpretasi</h2>
+                    <p>Data hasil kegiatan foto udara masih dalam bentuk potongan gambar, agar mendapatkan informasi yang jelas maka potongan gambar tadi diolah menggunakan software image processing sehingga menjadi sebuah gambar lokasi yang utuh.
+                        Kemudian dilakukan interpretasi obyek untuk pemetaan dan berbagai keperluan perencanaan dan pembangunan.</p>
+                
+                    <section>
+                        <h3>Pengolahan Data</h3>
+                        <img src="https://kameraudara.com/wp-content/uploads/2014/11/bekasi.jpg" alt="koreksi foto" class="kolom-gambar" title="Orthorectification">
+                        <p>Cara pertama yang dilakukan adalah Mosaicking yaitu proses penggabungan dari beberapa citra sehingga terlihat utuh.  Misalnya tile potongan citra akan kita gabung menjadi satu scene atau penggabungan dari beberapa scene. Sehingga, citra yang terdiri dari beberapa file setelah kita mosaicking menjadi satu file. Pada proses mosaicking juga bisa dilakukan cutline (pemotongan) sesuai batas area yang kita inginkan.
+                            cara kedua adalah dengan Ortorektifikasi yaitu proses transformasi data raster citra satelit ke koordinat bumi (lapangan). Dalam proses ortorektifikasi sudut pengambilan citra satelit sangat mempengaruhi hasil orto tersebut. Selain itu, DEM yang digunakan juga menjadi parameter penting dalam proses koreksi geometri. Semakin tinggi resolusi DEM yang digunakan, proses koreksi geometrik akan semakin akurat.</p>
+                    </section>
+
+                    <section>
+                        <h3>Interpretasi Obyek</h3>
+                        <img src="https://sinaugis.files.wordpress.com/2008/06/quickbird_2.jpg" alt="interpretasi objek" class="kolom-gambar" title="Interpretasi Objek">
+                        <p>Interpretasi foto udara merupakan kegiatan menganalisa citra foto udara dengan maksud untuk mengidentifikasi dan menilai objek pada citra tersebut sesuai dengan prinsip-prinsip interpretasi. Interpretasi foto merupakan salah satu dari macam pekerjaan fotogrametri yang ada sekarang ini. Interpretasi foto termasuk didalamnya kegiatan-kegiatan pengenalan dan identifikasi suatu objek.
+
+                            Dengan kata lain interpretasi foto merupakan kegiatan yang mempelajari bayangan foto secara sistematis untuk tujuan identifikasi atau penafsiran objek.
+                            
+                            Interpretasi foto biasanya meliputi penentuan lokasi relatif dan luas bentangan. Interpretasi akan dilakukan berdasarkan kajian dari objek-objek yang tampak pada foto udara. Keberhasilan dalam interpretasi foto udara akan bervariasi sesuai dengan latihan dan pengalaman penafsir, kondisi objek yang diinterpretasi, dan kualitas foto yang digunakan.
+                            Penafsiran foto udara banyak digunakan oleh berbagai disiplin ilmu dalam memperoleh informasi yang digunakan.
+                            Aplikasi fotogrametri sangat bermanfaat diberbagai bidang  Untuk memperoleh jenis-jenis informasi spasial diatas dilakukan dengan teknik interpretasi foto/citra,sedang referensi geografinya  diperoleh dengan cara fotogrametri. Interpretasi foto/citra dapat dilakukan dengan cara konvensional atau dengan bantuan komputer.Salah satu alat yang dapat digunakan dalam interpretasi konvensional adalah stereoskop dan alat pengamatan paralaks yakni paralaks bar.</p>
+                    </section>
+                </article>
+            </div>
+            <aside class="profile card">
+                <article>
+                    <header>
+                        <h2>Contact Me</h2>
+                        <p>Saya seorang GIS Specialist dan Business Development</p>
+                        <figure>
+                            <img src="assets/image/photosaya.JPG" class="profile img" alt="fotosaya" title="Bos Ganteng">
+                            <figcaption><b>Owner GeoImagine Solution</b></figcaption>
+                        </figure>
+                    </header>
+                    <section>
+                        <h3>Informasi Lainnya</h3>
+                        <table>
+                            <tr>
+                                <th>Nama</th>
+                                <td>Dicky Kusuma Hardika</td>
+                            </tr>
+                            <tr>
+                                <th>Alamat</th>
+                                <td>Cibinong, Kabupaten Bogor</td>
+                            </tr>
+                            <tr>
+                                <th>Provinsi</th>
+                                <td>Jawa Barat</td>
+                            </tr>
+                            <tr>
+                                <th>Kebangsaan</th>
+                                <td>Indonesia</td>
+                            </tr>
+                                <th>Nomor Telepon</th>
+                                <td>+62 813 1711 4170</td>
+                            </tr>
+                        </table>
+                    </section>
+                </article>
+            </aside>
+            <aside class="profile card">
+                <iframe src="https://calendar.google.com/calendar/embed?height=500&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FJakarta&amp;src=ZGlja3lnZW9zZXJ2ZXJAZ21haWwuY29t&amp;src=aWQuaW5kb25lc2lhbiNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23039BE5&amp;color=%230B8043&amp;title=Calendar%20Event" style="border:solid 1px #777" width="420" height="500" frameborder="0" scrolling="no"></iframe>
+            </aside>
+            <aside class="profile card">
+                <form action="/action_page.php">
+                    <div class="contair">
+                      <h2>Ikuti berita tentang Kami</h2>
+                      <p>Silakan isi form kontak dibawah ini untuk mengikuti info terbaru tentang teknologi GIS dan kami dapat menginformasikan penawaran terbaik untuk bisnis anda.</p>
+                    </div>
+                  
+                    <div class="contair" style="background-color:white">
+                      <input type="text" placeholder="Name" name="name" required>
+                      <input type="text" placeholder="Email address" name="mail" required>
+                    </div>
+                  
+                    <div class="contair">
+                      <input type="submit" value="Subscribe">
+                    </div>
+                </form>
+            </aside>
+        </main>
+        <footer>
+            <div class="row">
+                <div class="column">
+                    <h2>Head Office</h2>
+                    <p>
+                        <br>Jalan Merdeka No.46</br>
+                        <br>World Trade Center Building 46 Floor</br>
+                        <br>Kecamatan Dukuh Atas, Kota Jakarta</br>
+                        <br>12612, Telp (021)91622179</br>
+                    </p>
+                </div>
+    
+                <div class="column">
+                    <h2>Branch Office</h2>
+                    <p>
+                        <br>Jalan Nusantara No.13</br>
+                        <br>Komplek Pertokoan Sejahtera</br>
+                        <br>Kecamatan Bogor Tengah, Bogor, Jawa Barat<br>
+                        <br>19230, Telp (021)91622180</br>
+                    </p>
+                </div>
+            </div>
+            <p>Copyright &#169; 2020, Geo Imagine Solution - All rights reserved</p>
+        </footer> 
+    </body>
+</html>
