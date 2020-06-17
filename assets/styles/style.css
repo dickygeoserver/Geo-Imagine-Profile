@@ -201,7 +201,7 @@ li.dropdown {
    position: relative;
    color: white;
    text-align: center;
-   background-image: url('air-view.JPG') no-repeat;
+   background: url('air-view.JPG') no-repeat;
    background-position: center;
    background-size: cover;
 }
