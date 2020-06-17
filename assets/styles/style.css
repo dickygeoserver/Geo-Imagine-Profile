@@ -201,6 +201,8 @@ li.dropdown {
    position: relative;
    color: white;
    text-align: center;
+   background-image: url("assets/image/air-view.JPG");
+   background-size: cover;
 }
 
 .jumboton {
@@ -210,12 +212,6 @@ li.dropdown {
    text-align: left;
    background-image: url('https://4.bp.blogspot.com/-XejMWUpfRio/Wm8xGxQzHuI/AAAAAAAAM60/u57TOwUsBjcAWm_SuXI4Ch1ZM3fYtDu6gCLcBGAs/s1600/IMG-20180124-WA0022.jpg');
    background-size: cover;
-}
-
-.cover {
-   margin: 0 auto;
-   background-size: cover;
-   position: relative;
 }
 
 * {
