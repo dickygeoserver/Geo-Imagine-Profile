@@ -215,6 +215,7 @@ li.dropdown {
 .cover {
    margin: 0 auto;
    background-size: cover;
+   position: relative;
 }
 
 * {
