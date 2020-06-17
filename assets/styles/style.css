@@ -201,7 +201,7 @@ li.dropdown {
    position: relative;
    color: white;
    text-align: center;
-   background-image: url('https://dickygeoserver.github.io/assets/image/air-view.JPG')no-repeat center center fixed;
+   background-image: url("https://dickygeoserver.github.io/assets/image/air-view.JPG")no-repeat center center fixed;
    background-size: cover;
 }
 
