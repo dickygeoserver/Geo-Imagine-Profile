@@ -214,10 +214,14 @@ li.dropdown {
 
 .center h1 {
    font-size: 60px;
+   word-spacing: 8px;
+   letter-spacing: 5px;
+   text-shadow: 2px 2px 5px black;
 }
 
 .center p {
    font-size: 24px;
+   text-shadow: 2px 2px 5px black;
 }
 
 .jumboton {
