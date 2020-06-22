@@ -323,7 +323,7 @@ input[type=submit]:hover {
    max-height: 250px;
    zoom: 1.7;
    object-position: center;
-   object-fit: fill;
+   object-fit: cover;
    border: 1px solid black ;
 }
 
